@@ -32,7 +32,11 @@ public class CryptoTestParser {
                 String hundredTimes = "";
                 String thousandTimes = "";
 
-                key = getRawValue(bufferedReader.readLine() + bufferedReader.readLine().trim());
+                if (filePath.contains("128") || filePath.contains("192")) {
+                    key = getRawValue(bufferedReader.readLine());
+                }else{
+                    key = getRawValue( bufferedReader.readLine() + bufferedReader.readLine().trim());
+                }
 
                 if (setNumber < 5) {
                     plain = getRawValue(bufferedReader.readLine());

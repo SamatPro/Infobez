@@ -8,7 +8,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         final CryptoTestParser cryptoTestParser = new CryptoTestParser();
-        final List<Test> tests = cryptoTestParser.readTestDataFromFile("tests/9.2.30.Serpent.vectors256.txt");
+        final List<Test> tests = cryptoTestParser.readTestDataFromFile("tests/9.2.30.Serpent.vectors192.txt");
         final Serpent serpent = new Serpent();
 
         int success = 0;

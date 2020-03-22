@@ -113,6 +113,7 @@ public class Serpent {
         final int[] w = new int[12];
 
         final ByteBuffer byteBuffer = ByteBuffer.wrap(secret);
+
         for (int i = 0; i < 8; i++) {
             w[i] = byteBuffer.getInt();
         }
